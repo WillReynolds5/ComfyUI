@@ -5,10 +5,26 @@ import openai
 from comfy_client import comfyui_inference_basic
 from llm import parse_json, inference
 
-
 previous_prompts = []
 
-# TODO: while you save the images (happens in the comfyui_inference_basic method ), also save the prompts as json, we need all the data, we can create descriptions for the images.
+
+def save_prompt_to_json(filename, prompt_data):
+    """Save prompt data to a JSON file."""
+    try:
+        # Load existing data
+        with open('prompts_data.json', 'r') as file:
+            data = json.load(file)
+    except FileNotFoundError:
+        # If the file does not exist, start with an empty list
+        data = []
+
+    # Append the new data
+    data.append(prompt_data)
+
+    # Write the updated data back to the file
+    with open('prompts_data.json', 'w') as file:
+        json.dump(data, file, indent=4)
+
 
 def generate_portraits():
     global previous_prompts
@@ -34,7 +50,7 @@ Generate a new prompt that is very different from the following previous prompts
                 for prompt in previous_prompts:
                     base_prompt += f"\n\n{prompt}"
 
-            base_prompt += "\nThe new prompt should describe and vary in style, gender, ethnicity, age, pose, expression. Output only one JSON object wth the keys postive and negative."
+            base_prompt += "\nThe new prompt should describe and vary in style, gender, ethnicity, age, pose, expression. Output only one JSON object with the keys positive and negative."
 
             messages = [
                 {"role": "user", "content": base_prompt}
@@ -49,7 +65,19 @@ Generate a new prompt that is very different from the following previous prompts
                 # Ensure we only keep the last two prompts
                 previous_prompts = previous_prompts[-10:]
                 filename = f"portrait_{time.time()}.png"
-                comfyui_inference_basic(positive_prompt=parsed_response["positive"], negative_prompt=parsed_response["negative"], filename=filename)
+                comfyui_inference_basic(positive_prompt=parsed_response["positive"],
+                                        negative_prompt=parsed_response["negative"], filename=filename)
+
+                # Save the prompt along with the filename and prompt details to a JSON file
+                prompt_data = {
+                    "filename": filename,
+                    "prompt": {
+                        "positive": parsed_response["positive"],
+                        "negative": parsed_response["negative"]
+                    }
+                }
+                save_prompt_to_json('prompts_data.json', prompt_data)
+
                 time.sleep(0.5)
 
         except Exception as e:
