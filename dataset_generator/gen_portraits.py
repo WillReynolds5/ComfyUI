@@ -8,7 +8,7 @@ from llm import parse_json, inference
 
 previous_prompts = []
 
-# TODO: while you save the images, also save the prompts, we need all the data, we can create descriptions for the images.
+# TODO: while you save the images (happens in the comfyui_inference_basic method ), also save the prompts as json, we need all the data, we can create descriptions for the images.
 
 def generate_portraits():
     global previous_prompts
@@ -48,7 +48,8 @@ Generate a new prompt that is very different from the following previous prompts
                 previous_prompts.append(response)
                 # Ensure we only keep the last two prompts
                 previous_prompts = previous_prompts[-10:]
-                comfyui_inference_basic(positive_prompt=parsed_response["positive"], negative_prompt=parsed_response["negative"])
+                filename = f"portrait_{time.time()}.png"
+                comfyui_inference_basic(positive_prompt=parsed_response["positive"], negative_prompt=parsed_response["negative"], filename=filename)
                 time.sleep(0.5)
 
         except Exception as e:
