@@ -2,7 +2,7 @@ import random
 import json
 from urllib import request
 
-def comfyui_inference_basic(positive_prompt, negative_prompt, filename):
+def comfyui_inference_basic(positive_prompt, negative_prompt, id):
 
 
     random_seed = random.randint(0, 1000000000)
@@ -102,7 +102,7 @@ def comfyui_inference_basic(positive_prompt, negative_prompt, filename):
   }},
   "9": {{
     "inputs": {{
-      "filename_prefix": "{filename}",
+      "filename_prefix": {id},
       "images": [
         "8",
         0
@@ -110,10 +110,10 @@ def comfyui_inference_basic(positive_prompt, negative_prompt, filename):
     }},
     "class_type": "SaveImage",
     "_meta": {{
-      "title": "Save Image"
+      "title": "Save Image",
     }}
   }}
-}}""".format(positive=positive_prompt, negative=negative_prompt, random_seed=random_seed, filename=filename)
+}}""".format(positive=positive_prompt, negative=negative_prompt, random_seed=random_seed, id=id)
     json_prompt = json.loads(prompt)
     return queue_prompt(json_prompt)
 

@@ -58,19 +58,21 @@ Generate a new prompt that is very different from the following previous prompts
 
             response = inference(messages)
             parsed_response, success = parse_json(response)
+            prefix = str(uuid.uuid4().hex)
             if success:
                 print(response)
                 # Update the previous prompts list with the new prompt
                 previous_prompts.append(response)
                 # Ensure we only keep the last two prompts
                 previous_prompts = previous_prompts[-10:]
-                filename = f"portrait_{time.time()}.png"
                 comfyui_inference_basic(positive_prompt=parsed_response["positive"],
-                                        negative_prompt=parsed_response["negative"], filename=filename)
+                                        negative_prompt=parsed_response["negative"],
+                                        id=prefix)
 
+                # TODO: get the filename
                 # Save the prompt along with the filename and prompt details to a JSON file
                 prompt_data = {
-                    "filename": filename,
+                    "id": prefix,
                     "prompt": {
                         "positive": parsed_response["positive"],
                         "negative": parsed_response["negative"]
