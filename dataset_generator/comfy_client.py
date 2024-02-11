@@ -2,7 +2,7 @@ import random
 import json
 from urllib import request
 
-def comfyui_inference(positive_prompt, negative_prompt):
+def comfyui_inference_basic(positive_prompt, negative_prompt):
 
 
     random_seed = random.randint(0, 1000000000)
@@ -117,6 +117,9 @@ def comfyui_inference(positive_prompt, negative_prompt):
     json_prompt = json.loads(prompt)
     return queue_prompt(json_prompt)
 
+
+def comfyui_inference_ipadpater():
+    pass
 
 def queue_prompt(prompt):
     p = {"prompt": prompt}
