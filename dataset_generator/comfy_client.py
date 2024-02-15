@@ -2,10 +2,11 @@ import random
 import json
 from urllib import request
 
-def comfyui_inference_basic(positive_prompt, negative_prompt, id):
+def comfyui_inference_basic(positive_prompt, negative_prompt, id, iterations=2):
 
-    random_seed = random.randint(0, 1000000000)
-    prompt = """
+    for _ in range(iterations):
+        random_seed = random.randint(0, 1000000000)
+        prompt = """
 {{
   "3": {{
     "inputs": {{
@@ -39,7 +40,7 @@ def comfyui_inference_basic(positive_prompt, negative_prompt, id):
   }},
   "4": {{
     "inputs": {{
-      "ckpt_name": "BEN_USE_THIS/sd_xl_base_1.0.safetensors"
+      "ckpt_name": "RealVisXL_V3.0.safetensors"
     }},
     "class_type": "CheckpointLoaderSimple",
     "_meta": {{
@@ -113,7 +114,9 @@ def comfyui_inference_basic(positive_prompt, negative_prompt, id):
     }}
   }}
 }}""".format(positive=positive_prompt, negative=negative_prompt, random_seed=random_seed, id=id)
-    json_prompt = json.loads(prompt)
+
+        json_prompt = json.loads(prompt)
+
     return queue_prompt(json_prompt)
 
 
