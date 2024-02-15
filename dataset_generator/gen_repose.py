@@ -9,11 +9,12 @@ from llm import parse_json, inference
 previous_prompts = []
 
 
-def save_prompt_to_json(filename, prompt_data):
+def save_prompt_to_json(path, prompt_data):
     """Save prompt data to a JSON file."""
+    path = os.path.join(path, 'prompts_data.json')
     try:
         # Load existing data
-        with open('prompts_data.json', 'r') as file:
+        with open(path, 'r') as file:
             data = json.load(file)
     except FileNotFoundError:
         # If the file does not exist, start with an empty list
@@ -23,7 +24,7 @@ def save_prompt_to_json(filename, prompt_data):
     data.append(prompt_data)
 
     # Write the updated data back to the file
-    with open('prompts_data.json', 'w') as file:
+    with open(path, 'w') as file:
         json.dump(data, file, indent=4)
 
 
@@ -59,7 +60,7 @@ Generate a new prompt that is very different from the following previous prompts
 
             response = inference(messages)
             parsed_response, success = parse_json(response)
-            prefix = str(uuid.uuid4().hex)
+            image_id = str(uuid.uuid4().hex)
             if success:
                 print(response)
                 # Update the previous prompts list with the new prompt
@@ -68,18 +69,18 @@ Generate a new prompt that is very different from the following previous prompts
                 previous_prompts = previous_prompts[-10:]
                 comfyui_inference_basic(positive_prompt=parsed_response["positive"],
                                         negative_prompt=parsed_response["negative"],
-                                        id=prefix)
+                                        id=image_id)
 
                 # TODO: get the filename
                 # Save the prompt along with the filename and prompt details to a JSON file
                 prompt_data = {
-                    "id": prefix,
+                    "id": image_id,
                     "prompt": {
                         "positive": parsed_response["positive"],
                         "negative": parsed_response["negative"]
                     }
                 }
-                save_prompt_to_json('prompts_data.json', prompt_data)
+                save_prompt_to_json(image_id, prompt_data)
 
                 time.sleep(0.5)
 

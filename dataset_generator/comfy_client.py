@@ -101,7 +101,7 @@ def comfyui_inference_basic(positive_prompt, negative_prompt, id):
   }},
   "9": {{
     "inputs": {{
-      "filename_prefix": "{id}",
+      "filename_prefix": "{id}/image",
       "images": [
         "8",
         0
