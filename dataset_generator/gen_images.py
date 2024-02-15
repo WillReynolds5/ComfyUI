@@ -1,7 +1,7 @@
 import json
 import uuid
 import time
-import openai
+import os
 
 from comfy_client import comfyui_inference_basic
 from llm import parse_json, inference
