@@ -109,7 +109,7 @@ def comfyui_inference_basic(positive_prompt, negative_prompt, id):
     }},
     "class_type": "SaveImage",
     "_meta": {{
-      "title": "Save Image",
+      "title": "Save Image"
     }}
   }}
 }}""".format(positive=positive_prompt, negative=negative_prompt, random_seed=random_seed, id=id)
