@@ -11,13 +11,12 @@ previous_prompts = []
 
 def save_prompt_to_json(path, prompt_data):
     """Save prompt data to a JSON file."""
-    path = os.path.join(path, 'prompts_data.json')
+    path = os.path.join('output', path, 'prompts_data.json')
     try:
         # Load existing data
         with open(path, 'r') as file:
             data = json.load(file)
     except FileNotFoundError:
-        # If the file does not exist, start with an empty list
         data = []
 
     # Append the new data
@@ -61,6 +60,9 @@ Generate a new prompt that is very different from the following previous prompts
             response = inference(messages)
             parsed_response, success = parse_json(response)
             image_id = str(uuid.uuid4().hex)
+            # make dir output/image_id
+            os.makedirs(os.path.join('output', image_id))
+
             if success:
                 print(response)
                 # Update the previous prompts list with the new prompt
