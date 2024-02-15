@@ -116,8 +116,7 @@ def comfyui_inference_basic(positive_prompt, negative_prompt, id, iterations=2):
 }}""".format(positive=positive_prompt, negative=negative_prompt, random_seed=random_seed, id=id)
 
         json_prompt = json.loads(prompt)
-
-    return queue_prompt(json_prompt)
+        queue_prompt(json_prompt)
 
 
 def comfyui_inference_ipadpater():
