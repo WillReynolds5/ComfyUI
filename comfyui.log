@@ -1,0 +1,231 @@
+** ComfyUI startup time: 2024-06-26 19:24:31.973802
+[2024-06-26 19:24] ** Platform: Linux
+[2024-06-26 19:24] ** Python version: 3.10.13 (main, Sep 11 2023, 13:44:35) [GCC 11.2.0]
+[2024-06-26 19:24] ** Python executable: /home/mclean/miniconda3/envs/ComfyUI2/bin/python
+[2024-06-26 19:24] ** Log path: /home/mclean/Documents/GitHub/ComfyUI/comfyui.log
+[2024-06-26 19:24] 
+Prestartup times for custom nodes:
+[2024-06-26 19:24]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/rgthree-comfy
+[2024-06-26 19:24]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager
+[2024-06-26 19:24] 
+Total VRAM 24036 MB, total RAM 31959 MB
+[2024-06-26 19:24] xformers version: 0.0.25
+[2024-06-26 19:24] Set vram state to: NORMAL_VRAM
+[2024-06-26 19:24] Device: cuda:0 NVIDIA GeForce RTX 3090 : cudaMallocAsync
+[2024-06-26 19:24] VAE dtype: torch.bfloat16
+[2024-06-26 19:24] Using xformers cross attention
+[2024-06-26 19:24] [34mWAS Node Suite: [0mOpenCV Python FFMPEG support is enabled[0m
+[2024-06-26 19:24] [34mWAS Node Suite [93mWarning: [0m`ffmpeg_bin_path` is not set in `/home/mclean/Documents/GitHub/ComfyUI/custom_nodes/was-node-suite-comfyui/was_suite_config.json` config file. Will attempt to use system ffmpeg binaries if available.[0m
+[2024-06-26 19:24] [34mWAS Node Suite: [0mFinished.[0m [32mLoaded[0m [0m211[0m [32mnodes successfully.[0m
+[2024-06-26 19:24] 
+	[3m[93m"Believe in yourself, take on your challenges, and dig deep within yourself to conquer fears."[0m[3m - Chantal Sutherland[0m
+[2024-06-26 19:24] 
+[2024-06-26 19:24] ------------------------------------------
+[2024-06-26 19:24] [34mComfyroll Studio v1.76 : [92m 175 Nodes Loaded[0m
+[2024-06-26 19:24] ------------------------------------------
+[2024-06-26 19:24] ** For changes, please see patch notes at https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes/blob/main/Patch_Notes.md
+[2024-06-26 19:24] ** For help, please see the wiki at https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes/wiki
+[2024-06-26 19:24] ------------------------------------------
+[2024-06-26 19:24] [AnimateDiffEvo] - [0;31mERROR[0m - No motion models found. Please download one and place in: ['/home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-AnimateDiff-Evolved/models', '/home/mclean/Documents/GitHub/ComfyUI/models/animatediff_models']
+[2024-06-26 19:24] ### Loading: ComfyUI-Inspire-Pack (V0.68.1)
+[2024-06-26 19:24] [0;33m[ReActor][0m - [38;5;173mSTATUS[0m - [0;32mRunning v0.4.1-b12 in ComfyUI[0m
+[2024-06-26 19:24] Torch version: 2.2.0+cu121
+[2024-06-26 19:24] 
+[2024-06-26 19:24] [92m[rgthree] Loaded 33 exciting nodes.[0m
+[2024-06-26 19:24] [92m[rgthree] Will use rgthree's optimized recursive execution.[0m
+[2024-06-26 19:24] 
+[2024-06-26 19:24] [36;20m[comfyui_controlnet_aux] | INFO -> Using ckpts path: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/comfyui_controlnet_aux/ckpts[0m
+[2024-06-26 19:24] [36;20m[comfyui_controlnet_aux] | INFO -> Using symlinks: False[0m
+[2024-06-26 19:24] [36;20m[comfyui_controlnet_aux] | INFO -> Using ort providers: ['CUDAExecutionProvider', 'DirectMLExecutionProvider', 'OpenVINOExecutionProvider', 'ROCMExecutionProvider', 'CPUExecutionProvider', 'CoreMLExecutionProvider'][0m
+[2024-06-26 19:24] Traceback (most recent call last):
+  File "/home/mclean/Documents/GitHub/ComfyUI/nodes.py", line 1888, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Background-Replacement/__init__.py", line 8, in <module>
+    from .background_replacement import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
+  File "/home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Background-Replacement/background_replacement.py", line 11, in <module>
+    from .image_utils import ensure_resolution
+  File "/home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Background-Replacement/image_utils.py", line 4, in <module>
+    from .upscaler import upscale
+  File "/home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Background-Replacement/upscaler.py", line 4, in <module>
+    from realesrgan import RealESRGANer
+  File "/home/mclean/miniconda3/envs/ComfyUI2/lib/python3.10/site-packages/realesrgan/__init__.py", line 2, in <module>
+    from .archs import *
+  File "/home/mclean/miniconda3/envs/ComfyUI2/lib/python3.10/site-packages/realesrgan/archs/__init__.py", line 2, in <module>
+    from basicsr.utils import scandir
+  File "/home/mclean/miniconda3/envs/ComfyUI2/lib/python3.10/site-packages/basicsr/__init__.py", line 4, in <module>
+    from .data import *
+  File "/home/mclean/miniconda3/envs/ComfyUI2/lib/python3.10/site-packages/basicsr/data/__init__.py", line 22, in <module>
+    _dataset_modules = [importlib.import_module(f'basicsr.data.{file_name}') for file_name in dataset_filenames]
+  File "/home/mclean/miniconda3/envs/ComfyUI2/lib/python3.10/site-packages/basicsr/data/__init__.py", line 22, in <listcomp>
+    _dataset_modules = [importlib.import_module(f'basicsr.data.{file_name}') for file_name in dataset_filenames]
+  File "/home/mclean/miniconda3/envs/ComfyUI2/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/mclean/miniconda3/envs/ComfyUI2/lib/python3.10/site-packages/basicsr/data/realesrgan_dataset.py", line 11, in <module>
+    from basicsr.data.degradations import circular_lowpass_kernel, random_mixed_kernels
+  File "/home/mclean/miniconda3/envs/ComfyUI2/lib/python3.10/site-packages/basicsr/data/degradations.py", line 8, in <module>
+    from torchvision.transforms.functional_tensor import rgb_to_grayscale
+ModuleNotFoundError: No module named 'torchvision.transforms.functional_tensor'
+
+[2024-06-26 19:24] Cannot import /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Background-Replacement module for custom nodes: No module named 'torchvision.transforms.functional_tensor'
+[2024-06-26 19:24] ### Loading: ComfyUI-Impact-Pack (V4.74)
+[2024-06-26 19:24] ### Loading: ComfyUI-Impact-Pack (Subpack: V0.4)
+[2024-06-26 19:24] [Impact Pack] Wildcards loading done.
+[2024-06-26 19:24] [36mEfficiency Nodes:[0m Attempting to add Control Net options to the 'HiRes-Fix Script' Node (comfyui_controlnet_aux add-on)...[92mSuccess![0m
+[2024-06-26 19:24] [93mEfficiency Nodes Warning:[0m Failed to import python package 'simpleeval'; related nodes disabled.
+[2024-06-26 19:24] 
+[2024-06-26 19:24] [VideoHelperSuite] - [0;33mWARNING[0m - Failed to import imageio_ffmpeg
+[2024-06-26 19:24] Loaded efficiency nodes from /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/efficiency-nodes-comfyui
+[2024-06-26 19:24] Loaded ControlNetPreprocessors nodes from /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/comfyui_controlnet_aux
+[2024-06-26 19:24] [Errno 2] No such file or directory: '/home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Advanced-ControlNet/control/control.py/__init__.py'
+[2024-06-26 19:24] Could not find AnimateDiff nodes
+[2024-06-26 19:24] Loaded IPAdapter nodes from /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI_IPAdapter_plus
+[2024-06-26 19:24] Traceback (most recent call last):
+  File "/home/mclean/Documents/GitHub/ComfyUI/nodes.py", line 1888, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mclean/Documents/GitHub/ComfyUI/custom_nodes/comfyui-art-venture/__init__.py", line 10, in <module>
+    from .modules.nodes import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
+  File "/home/mclean/Documents/GitHub/ComfyUI/custom_nodes/comfyui-art-venture/modules/nodes.py", line 54, in <module>
+    from .inpaint import (
+  File "/home/mclean/Documents/GitHub/ComfyUI/custom_nodes/comfyui-art-venture/modules/inpaint/__init__.py", line 1, in <module>
+    from .nodes import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
+  File "/home/mclean/Documents/GitHub/ComfyUI/custom_nodes/comfyui-art-venture/modules/inpaint/nodes.py", line 8, in <module>
+    from .lama import LaMaInpaint
+  File "/home/mclean/Documents/GitHub/ComfyUI/custom_nodes/comfyui-art-venture/modules/inpaint/lama/__init__.py", line 6, in <module>
+    from omegaconf import OmegaConf
+ModuleNotFoundError: No module named 'omegaconf'
+
+[2024-06-26 19:24] Cannot import /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/comfyui-art-venture module for custom nodes: No module named 'omegaconf'
+[2024-06-26 19:24] Traceback (most recent call last):
+  File "/home/mclean/Documents/GitHub/ComfyUI/nodes.py", line 1888, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI_Noise/__init__.py", line 1, in <module>
+    from .nodes import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
+  File "/home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI_Noise/nodes.py", line 10, in <module>
+    import comfy.sampler_helpers
+ModuleNotFoundError: No module named 'comfy.sampler_helpers'
+
+[2024-06-26 19:24] Cannot import /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI_Noise module for custom nodes: No module named 'comfy.sampler_helpers'
+[2024-06-26 19:24] Searge-SDXL v4.3.1 in /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/SeargeSDXL
+[2024-06-26 19:24] Total VRAM 24036 MB, total RAM 31959 MB
+[2024-06-26 19:24] xformers version: 0.0.25
+[2024-06-26 19:24] Set vram state to: NORMAL_VRAM
+[2024-06-26 19:24] Device: cuda:0 NVIDIA GeForce RTX 3090 : cudaMallocAsync
+[2024-06-26 19:24] VAE dtype: torch.bfloat16
+[2024-06-26 19:24] Traceback (most recent call last):
+  File "/home/mclean/Documents/GitHub/ComfyUI/nodes.py", line 1888, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mclean/Documents/GitHub/ComfyUI/custom_nodes/facerestore_cf/__init__.py", line 8, in <module>
+    from custom_nodes.facerestore_cf.facelib.utils.face_restoration_helper import FaceRestoreHelper
+  File "/home/mclean/Documents/GitHub/ComfyUI/custom_nodes/facerestore_cf/__init__.py", line 14, in <module>
+    from custom_nodes.facerestore_cf.basicsr.utils.registry import ARCH_REGISTRY
+  File "/home/mclean/Documents/GitHub/ComfyUI/custom_nodes/facerestore_cf/basicsr/__init__.py", line 5, in <module>
+    from .losses import *
+  File "/home/mclean/Documents/GitHub/ComfyUI/custom_nodes/facerestore_cf/basicsr/losses/__init__.py", line 5, in <module>
+    from .losses import (CharbonnierLoss, GANLoss, L1Loss, MSELoss, PerceptualLoss, WeightedTVLoss, g_path_regularize,
+  File "/home/mclean/Documents/GitHub/ComfyUI/custom_nodes/facerestore_cf/basicsr/losses/losses.py", line 2, in <module>
+    import lpips
+ModuleNotFoundError: No module named 'lpips'
+
+[2024-06-26 19:24] Cannot import /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/facerestore_cf module for custom nodes: No module named 'lpips'
+[2024-06-26 19:24] ### Loading: ComfyUI-Manager (V2.7.1)
+[2024-06-26 19:24] ### ComfyUI Revision: 2065 [448d9263] | Released on '2024-03-14'
+[2024-06-26 19:24] 
+Import times for custom nodes:
+[2024-06-26 19:24]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/SDXLAspectRatio.py
+[2024-06-26 19:24]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Image-Selector
+[2024-06-26 19:24]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/sdxl_prompt_styler
+[2024-06-26 19:24]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/cg-use-everywhere
+[2024-06-26 19:24]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUi_NNLatentUpscale
+[2024-06-26 19:24]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/stability-ComfyUI-nodes
+[2024-06-26 19:24]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/IPAdapter-ComfyUI
+[2024-06-26 19:24]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI_IPAdapter_plus
+[2024-06-26 19:24]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-post-processing-nodes
+[2024-06-26 19:24]    0.0 seconds (IMPORT FAILED): /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI_Noise
+[2024-06-26 19:24]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/masquerade-nodes-comfyui
+[2024-06-26 19:24]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/comfy-image-saver
+[2024-06-26 19:24]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Text_Image-Composite
+[2024-06-26 19:24]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/comfy-plasma
+[2024-06-26 19:24]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Custom-Scripts
+[2024-06-26 19:24]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/Derfuu_ComfyUI_ModdedNodes
+[2024-06-26 19:24]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Frame-Interpolation
+[2024-06-26 19:24]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/efficiency-nodes-comfyui
+[2024-06-26 19:24]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Advanced-ControlNet
+[2024-06-26 19:24]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/rgthree-comfy
+[2024-06-26 19:24]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI_essentials
+[2024-06-26 19:24]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-AnimateDiff-Evolved
+[2024-06-26 19:24]    0.0 seconds (IMPORT FAILED): /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/comfyui-art-venture
+[2024-06-26 19:24]    0.0 seconds (IMPORT FAILED): /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/facerestore_cf
+[2024-06-26 19:24]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-KJNodes
+[2024-06-26 19:24]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-VideoHelperSuite
+[2024-06-26 19:24]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager
+[2024-06-26 19:24]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Inspire-Pack
+[2024-06-26 19:24]    0.1 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyMath
+[2024-06-26 19:24]    0.1 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/SeargeSDXL
+[2024-06-26 19:24]    0.1 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/comfyui_segment_anything
+[2024-06-26 19:24]    0.2 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI_Comfyroll_CustomNodes
+[2024-06-26 19:24]    0.2 seconds (IMPORT FAILED): /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Background-Replacement
+[2024-06-26 19:24]    0.2 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/comfyui-reactor-node
+[2024-06-26 19:24]    0.3 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/comfyui_controlnet_aux
+[2024-06-26 19:24]    0.3 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/rembg-comfyui-node
+[2024-06-26 19:24]    0.4 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/comfy_PoP
+[2024-06-26 19:24]    0.7 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/was-node-suite-comfyui
+[2024-06-26 19:24]    4.8 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Impact-Pack
+[2024-06-26 19:24] 
+[2024-06-26 19:24] Starting server
+
+[2024-06-26 19:24] To see the GUI go to: http://127.0.0.1:8188
+[2024-06-26 19:24] FETCH DATA from: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json
+[2024-06-26 19:25] Exception in thread Thread-2 (<lambda>):
+[2024-06-26 19:25] Traceback (most recent call last):
+[2024-06-26 19:25]   File "/home/mclean/miniconda3/envs/ComfyUI2/lib/python3.10/site-packages/aiohttp/connector.py", line 1173, in _create_direct_connection
+[2024-06-26 19:25]     hosts = await asyncio.shield(host_resolved)
+[2024-06-26 19:25]   File "/home/mclean/miniconda3/envs/ComfyUI2/lib/python3.10/site-packages/aiohttp/connector.py", line 884, in _resolve_host
+[2024-06-26 19:25]     addrs = await self._resolver.resolve(host, port, family=self._family)
+[2024-06-26 19:25]   File "/home/mclean/miniconda3/envs/ComfyUI2/lib/python3.10/site-packages/aiohttp/resolver.py", line 33, in resolve
+[2024-06-26 19:25]     infos = await self._loop.getaddrinfo(
+[2024-06-26 19:25]   File "/home/mclean/miniconda3/envs/ComfyUI2/lib/python3.10/asyncio/base_events.py", line 863, in getaddrinfo
+[2024-06-26 19:25]     return await self.run_in_executor(
+[2024-06-26 19:25]   File "/home/mclean/miniconda3/envs/ComfyUI2/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+[2024-06-26 19:25]     result = self.fn(*self.args, **self.kwargs)
+[2024-06-26 19:25]   File "/home/mclean/miniconda3/envs/ComfyUI2/lib/python3.10/socket.py", line 955, in getaddrinfo
+[2024-06-26 19:25]     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+[2024-06-26 19:25] socket.gaierror: [Errno -3] Temporary failure in name resolution
+[2024-06-26 19:25] 
+The above exception was the direct cause of the following exception:
+
+[2024-06-26 19:25] Traceback (most recent call last):
+[2024-06-26 19:25]   File "/home/mclean/miniconda3/envs/ComfyUI2/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+[2024-06-26 19:25]     self.run()
+[2024-06-26 19:25]   File "/home/mclean/miniconda3/envs/ComfyUI2/lib/python3.10/threading.py", line 953, in run
+[2024-06-26 19:25]     self._target(*self._args, **self._kwargs)
+[2024-06-26 19:25]   File "/home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/__init__.py", line 2359, in <lambda>
+[2024-06-26 19:25]     threading.Thread(target=lambda: asyncio.run(default_cache_update())).start()
+[2024-06-26 19:25]   File "/home/mclean/miniconda3/envs/ComfyUI2/lib/python3.10/asyncio/runners.py", line 44, in run
+[2024-06-26 19:25]     return loop.run_until_complete(main)
+[2024-06-26 19:25]   File "/home/mclean/miniconda3/envs/ComfyUI2/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+[2024-06-26 19:25]     return future.result()
+[2024-06-26 19:25]   File "/home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/__init__.py", line 2356, in default_cache_update
+[2024-06-26 19:25]     await asyncio.gather(a, b, c, d)
+[2024-06-26 19:25]   File "/home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/__init__.py", line 2344, in get_cache
+[2024-06-26 19:25]     json_obj = await get_data(uri, True)
+[2024-06-26 19:25]   File "/home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/__init__.py", line 547, in get_data
+[2024-06-26 19:25]     async with session.get(uri) as resp:
+[2024-06-26 19:25]   File "/home/mclean/miniconda3/envs/ComfyUI2/lib/python3.10/site-packages/aiohttp/client.py", line 1194, in __aenter__
+[2024-06-26 19:25]     self._resp = await self._coro
+[2024-06-26 19:25]   File "/home/mclean/miniconda3/envs/ComfyUI2/lib/python3.10/site-packages/aiohttp/client.py", line 578, in _request
+[2024-06-26 19:25]     conn = await self._connector.connect(
+[2024-06-26 19:25]   File "/home/mclean/miniconda3/envs/ComfyUI2/lib/python3.10/site-packages/aiohttp/connector.py", line 544, in connect
+[2024-06-26 19:25]     proto = await self._create_connection(req, traces, timeout)
+[2024-06-26 19:25]   File "/home/mclean/miniconda3/envs/ComfyUI2/lib/python3.10/site-packages/aiohttp/connector.py", line 911, in _create_connection
+[2024-06-26 19:25]     _, proto = await self._create_direct_connection(req, traces, timeout)
+[2024-06-26 19:25]   File "/home/mclean/miniconda3/envs/ComfyUI2/lib/python3.10/site-packages/aiohttp/connector.py", line 1187, in _create_direct_connection
+[2024-06-26 19:25]     raise ClientConnectorError(req.connection_key, exc) from exc
+[2024-06-26 19:25] aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host raw.githubusercontent.com:443 ssl:default [Temporary failure in name resolution]
