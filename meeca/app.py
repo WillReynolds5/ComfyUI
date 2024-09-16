@@ -16,7 +16,7 @@ def queue_prompt(prompt):
 
 def load_images():
     images = []
-    output_dir = "../output"  # Changed to look one directory back
+    output_dir = "output"  # Changed to look one directory back
     if os.path.exists(output_dir):
         for filename in os.listdir(output_dir):
             if filename.lower().endswith((".png", ".jpg", ".jpeg")):

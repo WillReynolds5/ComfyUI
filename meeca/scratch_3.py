@@ -31,7 +31,7 @@ def queue_prompt(prompt):
     payload = {"prompt": prompt}
     data = json.dumps(payload)
     headers = {'Content-Type': 'application/json'}
-    response = requests.post("http://127.0.0.1:8188/prompt", data=data, headers=headers)
+    response = requests.post("http://174.52.227.249:8188/prompt", data=data, headers=headers)
     print(response.text)
 
 if __name__ == "__main__":
