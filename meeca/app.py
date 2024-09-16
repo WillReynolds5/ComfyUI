@@ -1,5 +1,5 @@
 import streamlit as st
-from scratch_3 import gen_prompt
+from meeca.scratch_3 import gen_prompt
 import tempfile
 import requests
 import json
