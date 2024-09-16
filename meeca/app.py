@@ -7,7 +7,7 @@ import os
 from PIL import Image
 
 # Set the server address for your API
-server_address = "http://127.0.0.1:8188"
+server_address = "http://174.52.227.249:8188"
 
 
 def gen_prompt(pos_prompt, neg_prompt, background_prompt, face_image, pose_image, seed=None):
@@ -34,13 +34,6 @@ def gen_prompt(pos_prompt, neg_prompt, background_prompt, face_image, pose_image
     character_gen_data["29"]["inputs"]["image"] = face_image
 
     return character_gen_data
-
-def queue_prompt(prompt):
-    payload = {"prompt": prompt}
-    data = json.dumps(payload)
-    headers = {'Content-Type': 'application/json'}
-    response = requests.post("http://174.52.227.249:8188/prompt", data=data, headers=headers)
-    print(response.text)
 
 
 def queue_prompt(prompt):
