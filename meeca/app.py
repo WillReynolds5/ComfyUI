@@ -5,12 +5,13 @@ import requests
 import json
 import os
 from PIL import Image
+import base64
 
 # Set the server address for your API
 server_address = "https://1314-2601-681-8700-b290-7300-d115-8289-9b9c.ngrok-free.app"
 
 
-def gen_prompt(pos_prompt, neg_prompt, background_prompt, face_image, pose_image, seed=None):
+def gen_prompt(pos_prompt, neg_prompt, background_prompt, face_image_data, pose_image_data, seed=None):
     if seed is None:
         seed = random.randint(0, 1_000_000)
 
@@ -21,7 +22,7 @@ def gen_prompt(pos_prompt, neg_prompt, background_prompt, face_image, pose_image
     # Modify the positive, negative, and background prompts
     character_gen_data["17"]["inputs"]["text"] = pos_prompt
     character_gen_data["18"]["inputs"]["text"] = neg_prompt
-    character_gen_data["86"]["inputs"]["text"] = background_prompt  # Added background prompt
+    character_gen_data["86"]["inputs"]["text"] = background_prompt
 
     # Set the seed
     character_gen_data["19"]["inputs"]["seed"] = seed
@@ -29,9 +30,9 @@ def gen_prompt(pos_prompt, neg_prompt, background_prompt, face_image, pose_image
     # Set the grounding dino prompt to 'women'
     character_gen_data["14"]["inputs"]["prompt"] = "women"
 
-    # Set the image paths for face and pose images
-    character_gen_data["11"]["inputs"]["image"] = pose_image
-    character_gen_data["29"]["inputs"]["image"] = face_image
+    # Include the image data
+    character_gen_data["11"]["inputs"]["image_data"] = pose_image_data
+    character_gen_data["29"]["inputs"]["image_data"] = face_image_data
 
     return character_gen_data
 
@@ -81,22 +82,20 @@ def generate_tab():
     # Generate button
     if st.button("Generate"):
         if face_image_file is not None and pose_image_file is not None:
-            # Save the uploaded files to temporary paths
-            with tempfile.NamedTemporaryFile(delete=False, suffix=".jpg") as tmp_face:
-                tmp_face.write(face_image_file.read())
-                face_image_path = tmp_face.name
+            # Read and encode the uploaded images
+            face_image_bytes = face_image_file.read()
+            face_image_b64 = base64.b64encode(face_image_bytes).decode('utf-8')
 
-            with tempfile.NamedTemporaryFile(delete=False, suffix=".jpg") as tmp_pose:
-                tmp_pose.write(pose_image_file.read())
-                pose_image_path = tmp_pose.name
+            pose_image_bytes = pose_image_file.read()
+            pose_image_b64 = base64.b64encode(pose_image_bytes).decode('utf-8')
 
             # Generate the prompt
             prompt = gen_prompt(
                 positive_prompt,
                 negative_prompt,
                 background_prompt,
-                face_image_path,
-                pose_image_path,
+                face_image_b64,
+                pose_image_b64,
                 seed
             )
 
