@@ -7,8 +7,7 @@ import os
 from PIL import Image
 
 # Set the server address for your API
-url = "https://1314-2601-681-8700-b290-7300-d115-8289-9b9c.ngrok-free.app"
-server_address = "http://{url}:8188"
+server_address = "https://1314-2601-681-8700-b290-7300-d115-8289-9b9c.ngrok-free.app"
 
 
 def gen_prompt(pos_prompt, neg_prompt, background_prompt, face_image, pose_image, seed=None):
