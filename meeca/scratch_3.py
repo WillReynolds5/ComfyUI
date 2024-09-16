@@ -7,7 +7,7 @@ def gen_prompt(pos_prompt, neg_prompt, background_prompt, face_image, pose_image
         seed = random.randint(0, 1_000_000)
 
     # Load the character generation JSON file
-    with open('charactergen.json', 'r') as file:
+    with open('meeca/charactergen.json', 'r') as file:
         character_gen_data = json.load(file)
 
     # Modify the positive, negative, and background prompts
