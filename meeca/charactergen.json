@@ -1,7 +1,7 @@
 {
   "11": {
     "inputs": {
-      "image": "anabelle-the-best-of-me-12.jpg",
+      "image": "",
       "upload": "image"
     },
     "class_type": "LoadImage",
@@ -151,18 +151,6 @@
       "title": "VAE Decode"
     }
   },
-  "21": {
-    "inputs": {
-      "images": [
-        "14",
-        0
-      ]
-    },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "Preview Image"
-    }
-  },
   "22": {
     "inputs": {
       "strength": 0.85,
@@ -191,18 +179,6 @@
     "class_type": "ControlNetLoader",
     "_meta": {
       "title": "Load ControlNet Model"
-    }
-  },
-  "24": {
-    "inputs": {
-      "images": [
-        "55",
-        0
-      ]
-    },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "Preview Image"
     }
   },
   "25": {
@@ -284,18 +260,6 @@
     "class_type": "UpscaleModelLoader",
     "_meta": {
       "title": "Load Upscale Model"
-    }
-  },
-  "36": {
-    "inputs": {
-      "images": [
-        "37",
-        0
-      ]
-    },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "Preview Image"
     }
   },
   "37": {
@@ -392,18 +356,6 @@
       "title": "Apply ControlNet"
     }
   },
-  "47": {
-    "inputs": {
-      "images": [
-        "48",
-        0
-      ]
-    },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "Preview Image"
-    }
-  },
   "48": {
     "inputs": {
       "low_threshold": 100,
@@ -436,18 +388,6 @@
     "class_type": "Mix Color By Mask",
     "_meta": {
       "title": "Mix Color By Mask"
-    }
-  },
-  "52": {
-    "inputs": {
-      "images": [
-        "51",
-        0
-      ]
-    },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "Preview Image"
     }
   },
   "53": {
@@ -513,30 +453,6 @@
     "class_type": "ConditioningCombine",
     "_meta": {
       "title": "Conditioning (Combine)"
-    }
-  },
-  "66": {
-    "inputs": {
-      "images": [
-        "11",
-        0
-      ]
-    },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "Preview Image"
-    }
-  },
-  "67": {
-    "inputs": {
-      "images": [
-        "20",
-        0
-      ]
-    },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "Preview Image"
     }
   },
   "68": {
@@ -608,30 +524,6 @@
     "class_type": "UltralyticsDetectorProvider",
     "_meta": {
       "title": "UltralyticsDetectorProvider"
-    }
-  },
-  "72": {
-    "inputs": {
-      "images": [
-        "68",
-        0
-      ]
-    },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "Preview Image"
-    }
-  },
-  "80": {
-    "inputs": {
-      "images": [
-        "27",
-        1
-      ]
-    },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "Preview Image"
     }
   },
   "83": {
@@ -787,18 +679,6 @@
       "title": "Apply ControlNet"
     }
   },
-  "94": {
-    "inputs": {
-      "images": [
-        "95",
-        0
-      ]
-    },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "Preview Image"
-    }
-  },
   "95": {
     "inputs": {
       "low_threshold": 100,
@@ -842,33 +722,9 @@
       "title": "Convert Mask to Image"
     }
   },
-  "100": {
-    "inputs": {
-      "images": [
-        "99",
-        0
-      ]
-    },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "Preview Image"
-    }
-  },
-  "101": {
-    "inputs": {
-      "images": [
-        "85",
-        0
-      ]
-    },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "Preview Image"
-    }
-  },
   "112": {
     "inputs": {
-      "filename_prefix": "ComfyUI",
+      "filename_prefix": "image",
       "images": [
         "68",
         0
