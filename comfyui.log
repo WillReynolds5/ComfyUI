@@ -1,230 +1,62 @@
-** ComfyUI startup time: 2024-09-17 19:10:45.462892
-[2024-09-17 19:10] ** Platform: Linux
-[2024-09-17 19:10] ** Python version: 3.10.13 (main, Sep 11 2023, 13:44:35) [GCC 11.2.0]
-[2024-09-17 19:10] ** Python executable: /home/mclean/miniconda3/envs/ComfyUI2/bin/python
-[2024-09-17 19:10] ** Log path: /home/mclean/Documents/GitHub/ComfyUI/comfyui.log
-[2024-09-17 19:10] ** Comfy Deploy Revision: c6fe88bf660d2ad54c551c98b04a1719d57a996c
-[2024-09-17 19:10] 
+** ComfyUI startup time: 2024-10-18 09:01:29.098154
+[2024-10-18 09:01] ** Platform: Linux
+[2024-10-18 09:01] ** Python version: 3.10.13 (main, Sep 11 2023, 13:44:35) [GCC 11.2.0]
+[2024-10-18 09:01] ** Python executable: /home/mclean/miniconda3/envs/ComfyUI2/bin/python
+[2024-10-18 09:01] ** Log path: /home/mclean/Documents/GitHub/ComfyUI/comfyui.log
+[2024-10-18 09:01] ** Comfy Deploy Revision: c6fe88bf660d2ad54c551c98b04a1719d57a996c
+[2024-10-18 09:01] 
 Prestartup times for custom nodes:
-[2024-09-17 19:10]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/rgthree-comfy
-[2024-09-17 19:10]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/comfyui-deploy
-[2024-09-17 19:10]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager
-[2024-09-17 19:10] 
-[2024-09-17 19:10] [34mWAS Node Suite: [0mOpenCV Python FFMPEG support is enabled[0m
-[2024-09-17 19:10] [34mWAS Node Suite [93mWarning: [0m`ffmpeg_bin_path` is not set in `/home/mclean/Documents/GitHub/ComfyUI/custom_nodes/was-node-suite-comfyui/was_suite_config.json` config file. Will attempt to use system ffmpeg binaries if available.[0m
-[2024-09-17 19:10] [34mWAS Node Suite: [0mFinished.[0m [32mLoaded[0m [0m216[0m [32mnodes successfully.[0m
-[2024-09-17 19:10] 
-	[3m[93m"Believe in yourself, take on your challenges, and dig deep within yourself to conquer fears."[0m[3m - Chantal Sutherland[0m
-[2024-09-17 19:10] 
-[2024-09-17 19:10] ------------------------------------------
-[2024-09-17 19:10] [34mComfyroll Studio v1.76 : [92m 175 Nodes Loaded[0m
-[2024-09-17 19:10] ------------------------------------------
-[2024-09-17 19:10] ** For changes, please see patch notes at https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes/blob/main/Patch_Notes.md
-[2024-09-17 19:10] ** For help, please see the wiki at https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes/wiki
-[2024-09-17 19:10] ------------------------------------------
-[2024-09-17 19:10] [AnimateDiffEvo] - [0;31mERROR[0m - No motion models found. Please download one and place in: ['/home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-AnimateDiff-Evolved/models', '/home/mclean/Documents/GitHub/ComfyUI/models/animatediff_models']
-[2024-09-17 19:10] ### Loading: ComfyUI-Inspire-Pack (V0.68.1)
-[2024-09-17 19:10] [0;33m[ReActor][0m - [38;5;173mSTATUS[0m - [0;32mRunning v0.5.0-b4 in ComfyUI[0m
-[2024-09-17 19:10] Torch version: 2.2.0+cu121
-[2024-09-17 19:10] 
-[2024-09-17 19:10] [92m[rgthree] Loaded 40 extraordinary nodes.[0m
-[2024-09-17 19:10] [92m[rgthree] Will use rgthree's optimized recursive execution.[0m
-[2024-09-17 19:10] 
-[2024-09-17 19:10] Not found test nodes.
+[2024-10-18 09:01]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/rgthree-comfy
+[2024-10-18 09:01]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/comfyui-deploy
+[2024-10-18 09:01]    0.0 seconds: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager
+[2024-10-18 09:01] 
+[2024-10-18 09:01] [34mWAS Node Suite: [0mOpenCV Python FFMPEG support is enabled[0m
+[2024-10-18 09:01] [34mWAS Node Suite [93mWarning: [0m`ffmpeg_bin_path` is not set in `/home/mclean/Documents/GitHub/ComfyUI/custom_nodes/was-node-suite-comfyui/was_suite_config.json` config file. Will attempt to use system ffmpeg binaries if available.[0m
+[2024-10-18 09:01] [34mWAS Node Suite: [0mFinished.[0m [32mLoaded[0m [0m216[0m [32mnodes successfully.[0m
+[2024-10-18 09:01] 
+	[3m[93m"Art is the bridge that connects imagination to reality."[0m[3m - Unknown[0m
+[2024-10-18 09:01] 
+[2024-10-18 09:01] ------------------------------------------
+[2024-10-18 09:01] [34mComfyroll Studio v1.76 : [92m 175 Nodes Loaded[0m
+[2024-10-18 09:01] ------------------------------------------
+[2024-10-18 09:01] ** For changes, please see patch notes at https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes/blob/main/Patch_Notes.md
+[2024-10-18 09:01] ** For help, please see the wiki at https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes/wiki
+[2024-10-18 09:01] ------------------------------------------
+[2024-10-18 09:01] [AnimateDiffEvo] - [0;31mERROR[0m - No motion models found. Please download one and place in: ['/home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-AnimateDiff-Evolved/models', '/home/mclean/Documents/GitHub/ComfyUI/models/animatediff_models']
+[2024-10-18 09:01] ### Loading: ComfyUI-Inspire-Pack (V0.68.1)
+[2024-10-18 09:01] [0;33m[ReActor][0m - [38;5;173mSTATUS[0m - [0;32mRunning v0.5.0-b4 in ComfyUI[0m
+[2024-10-18 09:01] Torch version: 2.2.0+cu121
+[2024-10-18 09:01] 
+[2024-10-18 09:01] [92m[rgthree] Loaded 40 extraordinary nodes.[0m
+[2024-10-18 09:01] [92m[rgthree] Will use rgthree's optimized recursive execution.[0m
+[2024-10-18 09:01] 
+[2024-10-18 09:01] Not found test nodes.
 [36;20m[comfyui_controlnet_aux] | INFO -> Using ckpts path: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/comfyui_controlnet_aux/ckpts[0m
-[2024-09-17 19:10] [36;20m[comfyui_controlnet_aux] | INFO -> Using symlinks: False[0m
-[2024-09-17 19:10] [36;20m[comfyui_controlnet_aux] | INFO -> Using ort providers: ['CUDAExecutionProvider', 'DirectMLExecutionProvider', 'OpenVINOExecutionProvider', 'ROCMExecutionProvider', 'CPUExecutionProvider', 'CoreMLExecutionProvider'][0m
-[2024-09-17 19:10] ### Loading: ComfyUI-Impact-Pack (V5.18.14)
-[2024-09-17 19:10] ### Loading: ComfyUI-Impact-Pack (Subpack: V0.6)
-[2024-09-17 19:10] [Impact Pack] Wildcards loading done.
-[2024-09-17 19:10] [VideoHelperSuite] - [0;33mWARNING[0m - Failed to import imageio_ffmpeg
-[2024-09-17 19:10] Adding /home/mclean/Documents/GitHub/ComfyUI/custom_nodes to sys.path
-[2024-09-17 19:10] cannot import name 'wrap_model' from 'comfy.samplers' (/home/mclean/Documents/GitHub/ComfyUI/comfy/samplers.py)
-[2024-09-17 19:10] Loaded ControlNetPreprocessors nodes from /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/comfyui_controlnet_aux
-[2024-09-17 19:10] [Errno 2] No such file or directory: '/home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Advanced-ControlNet/control/control.py/__init__.py'
-[2024-09-17 19:10] Could not find AnimateDiff nodes
-[2024-09-17 19:10] Loaded IPAdapter nodes from /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI_IPAdapter_plus
-[2024-09-17 19:10] metaclass conflict: the metaclass of a derived class must be a (non-strict) subclass of the metaclasses of all its bases
-[2024-09-17 19:10] Loaded VideoHelperSuite from /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-VideoHelperSuite
-[2024-09-17 19:10] Searge-SDXL v4.3.1 in /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/SeargeSDXL
-[2024-09-17 19:10] ### Loading: ComfyUI-Manager (V2.7.1)
-[2024-09-17 19:10] ### ComfyUI Revision: 2412 [fdfd83b8] | Released on '2024-09-15'
-[2024-09-17 19:10] CD_BYPASS_UPLOAD False
-[2024-09-17 19:10] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
-[2024-09-17 19:10] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
-[2024-09-17 19:10] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
-[2024-09-17 19:10] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
-[2024-09-17 19:11] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
-[2024-09-17 19:11] [32m[rgthree][0m First run patching recursive_output_delete_if_changed and recursive_will_execute.[0m
-[2024-09-17 19:11] [33m[rgthree] Note: [0mIf execution seems broken due to forward ComfyUI changes, you can disable the optimization from rgthree settings in ComfyUI.[0m
-[2024-09-17 19:11] Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
-[2024-09-17 19:11] find model: /home/mclean/Documents/GitHub/ComfyUI/models/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
-[2024-09-17 19:11] Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
-[2024-09-17 19:11] find model: /home/mclean/Documents/GitHub/ComfyUI/models/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
-[2024-09-17 19:11] Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
-[2024-09-17 19:11] find model: /home/mclean/Documents/GitHub/ComfyUI/models/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
-[2024-09-17 19:11] Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
-[2024-09-17 19:11] find model: /home/mclean/Documents/GitHub/ComfyUI/models/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
-[2024-09-17 19:11] Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
-[2024-09-17 19:11] find model: /home/mclean/Documents/GitHub/ComfyUI/models/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
-[2024-09-17 19:11] set det-size: (640, 640)
-[2024-09-17 19:11] [33mINFO: the IPAdapter reference image is not a square, CLIPImageProcessor will resize and crop it at the center. If the main focus of the picture is not in the middle the result might not be what you are expecting.[0m
-[2024-09-17 19:11] Loading model from: /home/mclean/Documents/GitHub/ComfyUI/models/depthanything/depth_anything_v2_vitb_fp16.safetensors
-[2024-09-17 19:11] final text_encoder_type: bert-base-uncased
-[2024-09-17 19:11] A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
-[2024-09-17 19:11] A parameter name that contains `gamma` will be renamed internally to `weight`. Please use a different name to suppress this warning.
-[2024-09-17 19:12] 100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:06<00:00,  1.22s/it]100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:06<00:00,  1.36s/it]
-[2024-09-17 19:12] 100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:07<00:00,  1.42s/it]100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:07<00:00,  1.57s/it]
-[2024-09-17 19:12] Canva size: 768x1120
-[2024-09-17 19:12] Image size: 512x744
-[2024-09-17 19:12] Scale factor: 2
-[2024-09-17 19:12] Upscaling iteration 1 with scale factor 2
-[2024-09-17 19:12] Tile size: 1024x1024
-[2024-09-17 19:12] Tiles amount: 2
-[2024-09-17 19:12] Grid: 2x1
-[2024-09-17 19:12] Redraw enabled: True
-[2024-09-17 19:12] Seams fix mode: NONE
-[2024-09-17 19:12] 100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:04<00:00,  1.17it/s]100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:04<00:00,  1.15it/s]
-[2024-09-17 19:12] 100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:04<00:00,  1.21it/s]100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:04<00:00,  1.22it/s]
-[2024-09-17 19:12] 
-[2024-09-17 19:12] 
-[2024-09-17 19:12] 0: 640x448 1 face, 150.9ms
-[2024-09-17 19:12] 0: 640x448 1 face, 150.9ms
-[2024-09-17 19:12] Speed: 2.8ms preprocess, 150.9ms inference, 3.6ms postprocess per image at shape (1, 3, 640, 448)
-[2024-09-17 19:12] Speed: 2.8ms preprocess, 150.9ms inference, 3.6ms postprocess per image at shape (1, 3, 640, 448)
-[2024-09-17 19:12] Detailer: segment upscale for ((172.23859, 224.9111)) | crop region (516, 674) x 1.5199552290374994 -> (784, 1024)
-[2024-09-17 19:12] 100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:03<00:00,  1.74it/s]100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:03<00:00,  1.56it/s]
-[2024-09-17 19:12] executed {'node': '112', 'output': {'images': [{'filename': 'image_00001_.png', 'subfolder': '', 'type': 'output'}]}, 'prompt_id': '63bc1a7c-a01e-4047-a8af-04fec46ac378'}
-[2024-09-17 19:12] no pending upload
-[2024-09-17 19:12] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
-[2024-09-17 19:12] [33mINFO: the IPAdapter reference image is not a square, CLIPImageProcessor will resize and crop it at the center. If the main focus of the picture is not in the middle the result might not be what you are expecting.[0m
-[2024-09-17 19:12] 100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:06<00:00,  1.21s/it]100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:06<00:00,  1.35s/it]
-[2024-09-17 19:13] 100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:08<00:00,  1.48s/it]100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:08<00:00,  1.63s/it]
-[2024-09-17 19:13] Canva size: 768x1152
-[2024-09-17 19:13] Image size: 512x768
-[2024-09-17 19:13] Scale factor: 2
-[2024-09-17 19:13] Upscaling iteration 1 with scale factor 2
-[2024-09-17 19:13] Tile size: 1024x1024
-[2024-09-17 19:13] Tiles amount: 2
-[2024-09-17 19:13] Grid: 2x1
-[2024-09-17 19:13] Redraw enabled: True
-[2024-09-17 19:13] Seams fix mode: NONE
-[2024-09-17 19:13] 100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:04<00:00,  1.21it/s]100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:04<00:00,  1.23it/s]
-[2024-09-17 19:13] 100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:04<00:00,  1.21it/s]100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:04<00:00,  1.22it/s]
-[2024-09-17 19:13] 
-[2024-09-17 19:13] 
-[2024-09-17 19:13] 0: 640x448 1 face, 17.2ms
-[2024-09-17 19:13] 0: 640x448 1 face, 17.2ms
-[2024-09-17 19:13] Speed: 2.5ms preprocess, 17.2ms inference, 2.0ms postprocess per image at shape (1, 3, 640, 448)
-[2024-09-17 19:13] Speed: 2.5ms preprocess, 17.2ms inference, 2.0ms postprocess per image at shape (1, 3, 640, 448)
-[2024-09-17 19:13] Detailer: segment upscale for ((216.90659, 284.9046)) | crop region (650, 854) x 1.1997588949517979 -> (779, 1024)
-[2024-09-17 19:13] 100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:03<00:00,  1.75it/s]100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:03<00:00,  1.57it/s]
-[2024-09-17 19:13] executed {'node': '112', 'output': {'images': [{'filename': 'image_00002_.png', 'subfolder': '', 'type': 'output'}]}, 'prompt_id': '4bae0a07-4bf6-4651-ab0b-80818c679f2a'}
-[2024-09-17 19:13] no pending upload
-[2024-09-17 19:13] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
-[2024-09-17 19:13] [33mINFO: InsightFace detection resolution lowered to (576, 576).[0m
-[2024-09-17 19:13] 100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:07<00:00,  1.25s/it]100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:07<00:00,  1.40s/it]
-[2024-09-17 19:13] 100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:08<00:00,  1.54s/it]100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:08<00:00,  1.70s/it]
-[2024-09-17 19:13] Canva size: 1192x1800
-[2024-09-17 19:13] Image size: 792x1200
-[2024-09-17 19:13] Scale factor: 2
-[2024-09-17 19:13] Upscaling iteration 1 with scale factor 2
-[2024-09-17 19:13] Tile size: 1024x1024
-[2024-09-17 19:13] Tiles amount: 4
-[2024-09-17 19:13] Grid: 2x2
-[2024-09-17 19:13] Redraw enabled: True
-[2024-09-17 19:13] Seams fix mode: NONE
-[2024-09-17 19:13] 100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:04<00:00,  1.23it/s]100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:04<00:00,  1.24it/s]
-[2024-09-17 19:14] 100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:04<00:00,  1.22it/s]100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:04<00:00,  1.23it/s]
-[2024-09-17 19:14] 100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:04<00:00,  1.22it/s]100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:04<00:00,  1.24it/s]
-[2024-09-17 19:14] 100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:04<00:00,  1.22it/s]100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:04<00:00,  1.24it/s]
-[2024-09-17 19:14] 
-[2024-09-17 19:14] 
-[2024-09-17 19:14] 0: 640x448 1 face, 18.8ms
-[2024-09-17 19:14] 0: 640x448 1 face, 18.8ms
-[2024-09-17 19:14] Speed: 3.0ms preprocess, 18.8ms inference, 2.6ms postprocess per image at shape (1, 3, 640, 448)
-[2024-09-17 19:14] Speed: 3.0ms preprocess, 18.8ms inference, 2.6ms postprocess per image at shape (1, 3, 640, 448)
-[2024-09-17 19:14] Detailer: segment upscale for ((262.89478, 328.41675)) | crop region (788, 985) x 1.0401365070918853 -> (819, 1024)
-[2024-09-17 19:14] 100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:03<00:00,  1.78it/s]100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:03<00:00,  1.59it/s]
-[2024-09-17 19:14] executed {'node': '112', 'output': {'images': [{'filename': 'image_00003_.png', 'subfolder': '', 'type': 'output'}]}, 'prompt_id': '5d032f52-16b5-4eaa-85d9-91a6f1914a74'}
-[2024-09-17 19:14] no pending upload
-[2024-09-17 19:14] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
-[2024-09-17 19:14] [33mINFO: InsightFace detection resolution lowered to (576, 576).[0m
-[2024-09-17 19:14] 100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:06<00:00,  1.24s/it]100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:06<00:00,  1.36s/it]
-[2024-09-17 19:14] 100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:08<00:00,  1.56s/it]100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:08<00:00,  1.71s/it]
-[2024-09-17 19:14] Canva size: 1192x1800
-[2024-09-17 19:14] Image size: 792x1200
-[2024-09-17 19:14] Scale factor: 2
-[2024-09-17 19:14] Upscaling iteration 1 with scale factor 2
-[2024-09-17 19:14] Tile size: 1024x1024
-[2024-09-17 19:14] Tiles amount: 4
-[2024-09-17 19:14] Grid: 2x2
-[2024-09-17 19:14] Redraw enabled: True
-[2024-09-17 19:14] Seams fix mode: NONE
-[2024-09-17 19:14] 100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:04<00:00,  1.22it/s]100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:04<00:00,  1.23it/s]
-[2024-09-17 19:14] 100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:04<00:00,  1.21it/s]100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:04<00:00,  1.23it/s]
-[2024-09-17 19:15] 100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:04<00:00,  1.21it/s]100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:04<00:00,  1.22it/s]
-[2024-09-17 19:15] 100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:04<00:00,  1.21it/s]100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:04<00:00,  1.23it/s]
-[2024-09-17 19:15] 
-[2024-09-17 19:15] 
-[2024-09-17 19:15] 0: 640x448 2 faces, 18.9ms
-[2024-09-17 19:15] 0: 640x448 2 faces, 18.9ms
-[2024-09-17 19:15] Speed: 2.8ms preprocess, 18.9ms inference, 2.0ms postprocess per image at shape (1, 3, 640, 448)
-[2024-09-17 19:15] Speed: 2.8ms preprocess, 18.9ms inference, 2.0ms postprocess per image at shape (1, 3, 640, 448)
-[2024-09-17 19:15] Detailer: segment upscale for ((210.3092, 251.43141)) | crop region (630, 754) x 1.3587966493490335 -> (856, 1024)
-[2024-09-17 19:15] 100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:03<00:00,  1.76it/s]100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:03<00:00,  1.58it/s]
-[2024-09-17 19:15] Detailer: segment upscale for ((212.7019, 261.0324)) | crop region (639, 783) x 1.308331027789767 -> (836, 1024)
-[2024-09-17 19:15] 100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:03<00:00,  1.78it/s]100%|████████████████████████████████████████████████████████████████████████████████| 5/5 [00:03<00:00,  1.59it/s]
-[2024-09-17 19:15] executed {'node': '112', 'output': {'images': [{'filename': 'image_00004_.png', 'subfolder': '', 'type': 'output'}]}, 'prompt_id': '9309d539-4457-4a63-b34f-e21eeb8e683d'}
-[2024-09-17 19:15] no pending upload
-[2024-09-18 20:40] FETCH DATA from: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json
+[2024-10-18 09:01] [36;20m[comfyui_controlnet_aux] | INFO -> Using symlinks: False[0m
+[2024-10-18 09:01] [36;20m[comfyui_controlnet_aux] | INFO -> Using ort providers: ['CUDAExecutionProvider', 'DirectMLExecutionProvider', 'OpenVINOExecutionProvider', 'ROCMExecutionProvider', 'CPUExecutionProvider', 'CoreMLExecutionProvider'][0m
+[2024-10-18 09:01] ### Loading: ComfyUI-Impact-Pack (V5.18.14)
+[2024-10-18 09:01] ### Loading: ComfyUI-Impact-Pack (Subpack: V0.6)
+[2024-10-18 09:01] [Impact Pack] Wildcards loading done.
+[2024-10-18 09:01] [VideoHelperSuite] - [0;33mWARNING[0m - Failed to import imageio_ffmpeg
+[2024-10-18 09:01] Adding /home/mclean/Documents/GitHub/ComfyUI/custom_nodes to sys.path
+[2024-10-18 09:01] cannot import name 'wrap_model' from 'comfy.samplers' (/home/mclean/Documents/GitHub/ComfyUI/comfy/samplers.py)
+[2024-10-18 09:01] Loaded ControlNetPreprocessors nodes from /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/comfyui_controlnet_aux
+[2024-10-18 09:01] [Errno 2] No such file or directory: '/home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Advanced-ControlNet/control/control.py/__init__.py'
+[2024-10-18 09:01] Could not find AnimateDiff nodes
+[2024-10-18 09:01] Loaded IPAdapter nodes from /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI_IPAdapter_plus
+[2024-10-18 09:01] metaclass conflict: the metaclass of a derived class must be a (non-strict) subclass of the metaclasses of all its bases
+[2024-10-18 09:01] Loaded VideoHelperSuite from /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-VideoHelperSuite
+[2024-10-18 09:01] Searge-SDXL v4.3.1 in /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/SeargeSDXL
+[2024-10-18 09:01] ### Loading: ComfyUI-Manager (V2.7.1)
+[2024-10-18 09:01] ### ComfyUI Revision: 2413 [19f4f277] | Released on '2024-09-18'
+[2024-10-18 09:01] CD_BYPASS_UPLOAD False
+[2024-10-18 09:01] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[2024-10-18 09:01] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[2024-10-18 09:01] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[2024-10-18 09:01] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[2024-10-18 09:02] [Impact Pack] Wildcards loading done.
+[2024-10-18 09:02] FETCH DATA from: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json
+[2024-10-18 09:02] FETCH DATA from: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/.cache/1514988643_custom-node-list.json
+[2024-10-18 09:02] FETCH DATA from: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/.cache/1742899825_extension-node-map.json
+[2024-10-18 09:02] FETCH DATA from: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/.cache/1742899825_extension-node-map.json
+[2024-10-18 09:02] FETCH DATA from: /home/mclean/Documents/GitHub/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json

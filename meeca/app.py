@@ -3,13 +3,7 @@ import random
 import tempfile
 import requests
 import json
-import os
-from PIL import Image
 import base64
-import io
-import urllib.request
-import urllib.parse
-import uuid
 
 # Set the server address for your API
 server_address = "http://localhost:8188"
