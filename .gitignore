@@ -22,3 +22,7 @@ venv/
 web_custom_versions/
 .DS_Store
 ComfyUI-to-Python-Extension/
+
+
+/images/
+/images_captioned/

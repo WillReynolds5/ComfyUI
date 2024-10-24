@@ -133,14 +133,14 @@ def inpainting_tab():
     uploaded_image = st.file_uploader("Upload Image for Inpainting", type=["png", "jpg", "jpeg"])
 
     if uploaded_image:
+        # Open the uploaded image
+        image = Image.open(uploaded_image)
+        st.image(image, caption="Uploaded Image", use_column_width=True)
+
         # Save the uploaded image to a temporary file
         with tempfile.NamedTemporaryFile(delete=False, suffix=".png") as tmp_image:
-            tmp_image.write(uploaded_image.read())
+            image.save(tmp_image, format="PNG")
             image_path = tmp_image.name
-
-        # Open the image from the temporary file
-        image = Image.open(image_path)
-        st.image(image, caption="Uploaded Image", use_column_width=True)
 
         # Get original image dimensions
         img_width, img_height = image.size
